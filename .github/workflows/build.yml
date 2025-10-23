@@ -50,7 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runner: [ubuntu-latest,ubuntu-24.04-arm]
+        runner: [ubuntu-latest]
     runs-on: ${{ matrix.runner }}
     steps:
       - name: Free Disk-Space
@@ -132,7 +132,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [win32,win64,winarm64,linux32,linux64,linuxarm64]
+        target: [win64,linux64]
     steps:
       - name: Free Disk-Space
         run: df -h && sudo apt-get clean && docker system prune -a -f && sudo rm -rf /opt/ghc /usr/local/.ghcup /usr/local/lib/android && df -h
@@ -189,7 +189,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [win64,winarm64,linux64,linuxarm64]
+        target: [win64,linux64]
         variant: [lgpl-shared 8.0 fp]
     steps:
       - name: Free Disk-Space
@@ -256,7 +256,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [win64,winarm64,linux64,linuxarm64]
+        target: [win64,linux64]
         variant: [lgpl-shared 8.0 fp]
     steps:
       - name: Free Disk-Space
