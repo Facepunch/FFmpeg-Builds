@@ -1,0 +1,8 @@
+#!/bin/bash
+FF_CONFIGURE="$FF_CONFIGURE --disable-everything  --disable-amf --disable-audiotoolbox --disable-cuda-llvm  --disable-cuvid --disable-d3d11va --disable-d3d12va --disable-dxva2 --disable-ffnvcodec --disable-libdrm --disable-nvdec --disable-nvenc --disable-v4l2-m2m --disable-vaapi --disable-vdpau --disable-videotoolbox --disable-opencl"
+FF_CONFIGURE="$FF_CONFIGURE --enable-vulkan --enable-hwaccel=h264_vulkan --enable-hwaccel=hevc_vulkan --enable-hwaccel=av1_vulkan"
+FF_CONFIGURE="$FF_CONFIGURE --enable-decoder=aac*,ac3*,opus,vorbis,flac,vp8,libvpx_vp8,vp9,libvpx_vp9,pcm*,apcm*,mp3*,h264,libopenh264,h264_vulkan,hevc,hevc_vulkan,av1,av1_vulkan,libaom_av1,webp,libwebp,libwebp_animwebp --enable-encoder=aac*,ac3*,opus,vorbis,flac,vp8,libvpx_vp8,vp9,libvpx_vp9,pcm*,apcm*,mp3*,h264,libopenh264,h264_vulkan,hevc,hevc_vulkan,av1,av1_vulkan,libaom_av1,webp,libwebp,libwebp_anim"
+FF_CONFIGURE="$FF_CONFIGURE --enable-demuxer=avi,wav,matroska,webm,webp_chunk,mp3,mp4,m4v,mov,3gp,3g2,mj2,aac,ac3,ac4,flac,h264,hevc,av1,ogg,hls --enable-muxer=avi,wav,matroska,matroska_audio,webm,webp,mp3,mp4,m4v,mov,3gp,3g2,mj2,aac,ac3,ac4,flac,h264,hevc,av1,ogg,hls"
+FF_CONFIGURE="$FF_CONFIGURE --enable-filter=transpose_vulkan,vflip_vulkan,hflip_vulkan,fps,scale"
+FF_CONFIGURE="$FF_CONFIGURE --enable-parser=aac*,ac3*,flac,vp8,vp9,h264,hevc,av1,webp,opus,vorbis"
+FF_CONFIGURE="$FF_CONFIGURE --enable-protocol=file,http,httpproxy,https,tcp,tls,udp"
