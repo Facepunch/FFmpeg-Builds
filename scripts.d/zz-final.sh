@@ -12,12 +12,10 @@ ffbuild_depends() {
     echo xz
     echo fonts
     echo libvorbis
-    echo opencl
     echo pulseaudio
     echo vmaf
     echo x11
     echo vulkan
-    echo amf
     echo aom
     echo aribb24
     echo avisynth
@@ -26,7 +24,6 @@ ffbuild_depends() {
     echo davs2
     echo dvd
     echo fdk-aac
-    echo ffnvcodec
     echo frei0r
     echo gme
     echo kvazaar
@@ -44,7 +41,6 @@ ffbuild_depends() {
     echo libwebp
     echo libzmq
     echo lilv
-    echo onevpl
     echo openal
     echo openapv
     echo opencore-amr
@@ -61,7 +57,6 @@ ffbuild_depends() {
     echo svtav1
     echo twolame
     echo uavs3d
-    echo vaapi
     echo vidstab
     echo vvenc
     echo whisper
