@@ -59,7 +59,6 @@ ffbuild_depends() {
     echo uavs3d
     echo vidstab
     echo vvenc
-    echo whisper
     echo x264
     echo x265
     echo xavs2
