@@ -33,7 +33,6 @@ ffbuild_depends() {
     echo libjxl
     echo libmp3lame
     echo libopus
-    echo libplacebo
     echo librist
     echo libssh
     echo libtheora
